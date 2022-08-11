@@ -1,5 +1,4 @@
-DROP table IF EXISTS Fabricantes;
-DROP table IF EXISTS Articulos
+DROP table IF EXISTS fabricantes, articulos;
 
 create table fabricantes(
 	codigo int auto_increment primary key,
@@ -16,4 +15,3 @@ create table articulos(
 
 insert into Fabricantes(nombre)values('Intel');
 insert into Articulos(nombre, precio, fabricante)values('i9 12900k', 500, 1);
-
