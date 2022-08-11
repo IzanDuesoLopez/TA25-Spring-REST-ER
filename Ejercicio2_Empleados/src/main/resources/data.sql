@@ -1,25 +1,20 @@
-DROP table IF EXISTS fabricantes, articulos;
+DROP table IF EXISTS departamentos, empleados;
 
-create table fabricantes(
-	codigo int auto_increment primary key,
-    nombre nvarchar(100)
-);
-
-create table articulos(
-	codigo int auto_increment primary key,
+create table departamentos (
+	codigo int auto_increment,
     nombre nvarchar(100),
-    precio int,
-    fabricante int,
-    foreign key (fabricante) references Fabricantes(codigo)
+    presupuesto int,
+    primary key(codigo)
 );
 
-insert into Fabricantes(nombre)values('Intel');
-insert into Fabricantes(nombre)values('NVidia');
-insert into Fabricantes(nombre)values('AMD');
-insert into Fabricantes(nombre)values('CoolerMaster');
-insert into Fabricantes(nombre)values('Corsair');
-insert into Articulos(nombre, precio, fabricante)values('i9_12900k', 500, 1);
-insert into Articulos(nombre, precio, fabricante)values('RTX_3090ti', 2600, 2);
-insert into Articulos(nombre, precio, fabricante)values('Ryzen_9_5950X', 750, 3);
-insert into Articulos(nombre, precio, fabricante)values('CM_HP500', 250, 4);
-insert into Articulos(nombre, precio, fabricante)values('RMX_750W', 199, 5);
+create table empleados (
+	dni varchar(8) primary key, 
+	nombre nvarchar(100), 
+	apellidos nvarchar(255), 
+	departamento int, 
+	foreign key (departamento) references departamentos (codigo)
+    on delete cascade on update cascade
+);
+
+insert into departamentos(nombre, presupuesto)values('Reus', 2000);
+insert into empleados(dni, nombre, apellidos, departamento)values('12345678', 'Pepe', 'Pepi', 1);
