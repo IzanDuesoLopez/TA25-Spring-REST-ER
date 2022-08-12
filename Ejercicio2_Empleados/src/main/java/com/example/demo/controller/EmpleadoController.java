@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -63,5 +64,12 @@ public class EmpleadoController {
 		empleado_actualizado = empleadoServiceImpl.actualizarEmpleado(empleado_seleccionado);
 		
 		return empleado_actualizado;
+	}
+	
+	
+	// Eliminar empleados por dni
+	@DeleteMapping("/empleados/{dni}")
+	public void eliminarEmpleado(@PathVariable(name = "dni") String dni) {
+		empleadoServiceImpl.eliminarEmpleado(dni);
 	}
 }

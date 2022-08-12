@@ -3,10 +3,12 @@ package com.example.demo.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.demo.dao.IEmpleadoDAO;
 import com.example.demo.dto.Empleado;
 
+@Service
 public class EmpleadoServiceImpl implements IEmpleadoService{
 
 	// Utilizamos el IEmpleadoDAO instanciandolo
