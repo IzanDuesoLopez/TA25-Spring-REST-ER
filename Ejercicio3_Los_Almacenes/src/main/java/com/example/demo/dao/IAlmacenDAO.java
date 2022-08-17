@@ -8,6 +8,5 @@ import com.example.demo.dto.Almacen;
 
 public interface IAlmacenDAO extends JpaRepository<Almacen, Integer>{
 
-	public List<Almacen> findByNombre(String nombre);
 	
 }

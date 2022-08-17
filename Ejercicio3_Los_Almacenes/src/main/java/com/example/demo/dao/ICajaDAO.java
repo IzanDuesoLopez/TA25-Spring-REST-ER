@@ -8,6 +8,5 @@ import com.example.demo.dto.Caja;
 
 public interface ICajaDAO extends JpaRepository<Caja, String>{
 
-	public List<Caja> findByNombre(String nombre);
 	
 }

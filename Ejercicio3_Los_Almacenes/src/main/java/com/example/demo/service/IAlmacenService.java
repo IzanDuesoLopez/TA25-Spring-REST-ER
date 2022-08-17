@@ -10,7 +10,6 @@ public interface IAlmacenService {
 	public List<Almacen> listarAlmacenes();
 	public Almacen guardarAlmacen(Almacen almacen);
 	public Almacen almacenXCodigo(int codigo);
-	public List<Almacen> listarAlmacenNombre(String nombre);
 	public Almacen actualizarAlmacen(Almacen almacen);
 	public void eliminarAlmacen(int codigo);
 	

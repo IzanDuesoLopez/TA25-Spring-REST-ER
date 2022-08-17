@@ -29,11 +29,6 @@ public class AlmacenController {
 		return almacenServiceImpl.listarAlmacenes();
 	}
 	
-	@GetMapping("/almacenes/nombre/{nombre}")
-	public List<Almacen> listarAlmacanesNombre(@PathVariable(name="nombre") String nombre){
-		return almacenServiceImpl.listarAlmacenNombre(nombre);
-	}
-	
 	@PostMapping("/almacenes")
 	public Almacen guardarAlmacen(@RequestBody Almacen almacen) {
 		return almacenServiceImpl.guardarAlmacen(almacen);

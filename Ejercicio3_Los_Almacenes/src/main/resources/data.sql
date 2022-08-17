@@ -15,4 +15,8 @@ create table cajas (
 	);
 
 insert into almacenes(lugar, capacidad)values('Reus', 2000);
+insert into almacenes(lugar, capacidad)values('Salou', 3000);
+insert into almacenes(lugar, capacidad)values('TarragonaCity', 4000);
 insert into cajas(num_referencia, contenido, valor, codigo_almacen)values('aaaa', 'Leche', 300, 1);
+insert into cajas(num_referencia, contenido, valor, codigo_almacen)values('aaab', 'Huevos', 400, 2);
+insert into cajas(num_referencia, contenido, valor, codigo_almacen)values('aaac', 'Pan', 500, 3);

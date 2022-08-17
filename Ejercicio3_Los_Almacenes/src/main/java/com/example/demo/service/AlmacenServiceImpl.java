@@ -30,11 +30,6 @@ public class AlmacenServiceImpl implements IAlmacenService{
 	}
 
 	@Override
-	public List<Almacen> listarAlmacenNombre(String nombre) {
-		return iAlmacenDAO.findByNombre(nombre);
-	}
-
-	@Override
 	public Almacen actualizarAlmacen(Almacen almacen) {
 		return iAlmacenDAO.save(almacen);
 	}
