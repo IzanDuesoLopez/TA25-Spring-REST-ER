@@ -14,4 +14,8 @@ create table salas(
 );
 
 insert into peliculas(nombre, edad)values('Marvels Spider-man', 12);
+insert into peliculas(nombre, edad)values('Minecraft', 3);
+insert into peliculas(nombre, edad)values('Monster Killers', 18);
 insert into salas(codigo_pelicula, nombre)values(1, 'Sala1');
+insert into salas(codigo_pelicula, nombre)values(2, 'Sala2');
+insert into salas(codigo_pelicula, nombre)values(3, 'Sala3');
