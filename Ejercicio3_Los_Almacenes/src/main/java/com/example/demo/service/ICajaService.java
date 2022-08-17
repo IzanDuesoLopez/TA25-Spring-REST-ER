@@ -9,7 +9,7 @@ public interface ICajaService {
 	// Metodos para el full crud
 	public List<Caja> listarCajas();
 	public Caja guardarCaja(Caja caja);
-	public Caja almacenXCodigo(String codigo);
+	public Caja cajaXCodigo(String codigo);
 	public Caja actualizarCaja(Caja caja);
 	public void eliminarCaja(String codigo);
 	

@@ -27,7 +27,7 @@ public class CajaServiceImpl implements ICajaService{
 	}
 
 	@Override
-	public Caja almacenXCodigo(String codigo) {
+	public Caja cajaXCodigo(String codigo) {
 		return iCajaDAO.findById(codigo).get();
 	}
 
