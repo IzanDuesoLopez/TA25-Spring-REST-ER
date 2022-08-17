@@ -1,6 +1,6 @@
 # TA25-Spring-REST-ER
 
-###API 
+API 
 ```
 GET /api/articulos
 GET /api/articulos/nombre/{nombre}
